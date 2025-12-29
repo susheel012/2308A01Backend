@@ -12,7 +12,7 @@ const UserProductsRoutes = require('./Routes/UserRoutes/ProductRoutes');
 const UserCartRoutes = require("./Routes/UserRoutes/CartRoutes");
 const UserCheckoutRoutes = require("./Routes/UserRoutes/CheckoutRoutes");
 //Mongo Connection
-mongoose.connect(`${process.env.MONGOOSE_URL}/ecommerce`)
+mongoose.connect(process.env.MONGOOSE_URL)
 .then(() => console.log("mongoConnected Successfully"))
 .catch((e) => console.log(`Error: ${e}`));
 
